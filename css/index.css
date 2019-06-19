@@ -1,0 +1,238 @@
+* {
+    font-family: monospace;
+}
+
+h1 {
+    color: #000;
+    text-shadow: 3px 3px 3px #ddd;
+}
+
+p {
+    color: #000;
+}
+
+
+/* parent1 */
+
+.parent1 {
+    width: 98%;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    display: flex;
+    margin: 1px auto;
+    text-align: center;
+    flex-direction: row;
+}
+
+
+/* child1*/
+
+.child1 {
+    width: 50%;
+    text-align: left;
+}
+
+.logo {
+    width: 40%;
+    height: auto;
+    margin: 1%;
+}
+
+
+/* child2 */
+
+.child2 {
+    width: 50%;
+    text-align: right;
+    padding: 2%;
+}
+
+
+/* banner image to grab the attention of the customers */
+
+.mainimg {
+    width: 96%;
+    margin: 1% auto;
+}
+
+.mainimg img {
+    width: 100%;
+}
+
+
+/*  category  */
+
+.cloth {
+    width: 97%;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    display: flex;
+    margin: 1% auto;
+    text-align: center;
+    flex-direction: row;
+}
+
+
+/* cards */
+
+.category {
+    width: 23%;
+    text-align: center;
+    margin: 1%;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 1%;
+}
+
+
+/* clothing */
+
+.clothing {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+
+/* button */
+
+.button {
+    background-color: #000;
+    border-radius: 15px;
+    padding: 10px 32px;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+
+/* clothing:hover */
+
+.clothing:hover {
+    border-radius: 5px;
+    -moz-box-shadow: 1px 1px 5px #c53315;
+    -webkit-box-shadow: 1px 1px 5px #c53315;
+    box-shadow: 1px 1px 1px #97FF33;
+    border: solid 10px #fff;
+}
+
+.clothing:hover {
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+    border-radius: 15px;
+    -webkit-transition: all 1s ease;
+}
+
+.clothing:hover {
+    transform: scale(1.5, 1.5);
+}
+
+
+/* bottom */
+
+footer {
+    width: 100%;
+    color: #f7f4f3;
+    background-color: #b5dff4;
+    font-size: 15px;
+    text-align: center;
+}
+
+
+/* media queries(moblie) */
+
+@media only screen and (min-width: 320px) and (max-width: 760px) {
+    .parent1 {
+        width: 98%;
+        border-radius: 10px;
+        border: 2px solid #000;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    /* child */
+    .child1 {
+        width: 100%;
+        text-align: center;
+    }
+    /* child2 */
+    .child2 {
+        width: 100%;
+        text-align: center;
+    }
+    .mainimg {
+        margin-top: 2%;
+    }
+    /* cloth */
+    .cloth {
+        width: 100%;
+        border-radius: 10px;
+        border: 2px solid #ccc;
+        display: block;
+        flex-wrap: wrap;
+        text-align: center;
+        padding: 1%;
+        flex-direction: column;
+    }
+    /* category */
+    .category {
+        display: block;
+        width: 94%;
+        text-align: center;
+        margin: 2%;
+    }
+}
+
+
+/* media queries( tablet) */
+
+@media only screen and (min-width: 760px) and (max-width: 1024px) {
+    .parent1 {
+        width: 97%;
+        border-radius: 10px;
+        border: 2px solid #000;
+        display: flex;
+        margin: 1px auto;
+        text-align: center;
+        flex-direction: row;
+        background: #fff;
+        box-shadow: 10px 10px 10px red;
+    }
+    /* child1 */
+    .child1 {
+        width: 90%;
+        text-align: center;
+        padding: 2%;
+    }
+    /* child2 */
+    .child2 {
+        width: 99%;
+        text-align: center;
+        padding: 2%;
+    }
+    /* cloth */
+    .cloth {
+        width: 90%;
+        border-radius: 10px;
+        border: 2px solid #ccc;
+        display: flex;
+        padding: 2%;
+        flex-wrap: wrap;
+        margin: 1px auto;
+        text-align: center;
+        flex-direction: row;
+        background: #dffafc;
+    }
+    /* category */
+    .category {
+        display: block;
+        width: 43%;
+        text-align: center;
+        padding: 2%;
+        margin: 1%;
+    }
+}
